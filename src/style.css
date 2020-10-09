@@ -1,27 +1,53 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222831;
+  }
+  a {
+    color: #f2a365;
+  }
+  body > div > header {
+    color: #ececec;
+  }
+  body > div > section > header,
+  body > div > section > p,
+  body > div > section > ul {
+    color: #ececec;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+  }
+  a {
+    color: blue;
+  }
+  body > div > header {
+    color: #000;
+  }
+  body > div > section > header,
+  body > div > section > p,
+  body > div > section > ul {
+    color: #000;
+  }
+}
 body {
-	background-color: #000;
-	padding-bottom: 53px;
+  padding-bottom: 53px;
 }
-main {
-	max-width: 768px;
-	margin: auto;
+body > div {
+  max-width: 768px;
+  margin: auto;
 }
-a {
-	color: #a3b1ff;
+body > div > header {
+  font-family: "Noto Serif", serif;
 }
-main > header {
-	font-family: "Noto Serif", serif;
-	color: #fff;
+body > div > section > header,
+body > div > section > p,
+body > div > section > ul {
+  font-family: "Noto Sans", sans-serif;
 }
-main > section > header,
-main > section > p,
-main > section > ul {
-	font-family: "Noto Sans", sans-serif;
-	color: #fff;
+body > div > section > ul > li {
+  margin-bottom: 1rem;
 }
-main > section > ul > li {
-	margin-bottom: 1rem;
-}
-main > section > ul > li:last-child {
-	margin-bottom: 0;
+body > div > section > ul > li:last-child {
+  margin-bottom: 0;
 }
